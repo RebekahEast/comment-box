@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Comment Box</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+   <div id = "wrapper">
+        <div id = "comments">
+            <h2><em>Write your comments here!</em></h2><br>
+            <div id = "create_comment">
+                <label for = "comment_input" class = "label">Leave a comment!</label>
+                <textarea id = "comment_input" class = "input" rows = "6"></textarea>
+
+                <label for = "email_input" class = "label">Your Email</label>
+                <input id = "email_input" type = "email" class = "input"></input>
+
+                <label for = "name_input" class = "label">Your Name</label>
+                <input id = "name_input" type = "text" class = "input"></label>
+            </div>
+
+            <div id = "submit_comment">
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </body>
 </html>

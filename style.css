@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+* {
+    font-size: 20px;
+    margin:0;
+    padding:0;
+    font-family: raleway;
+}
+
+#wrapper {
+    margin: 5px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+#comments {
+    border: 1px solid rgb(44, 100, 109);
+    padding: 10px;
+}
+
+.label {
+    display: block;
+    margin-top: 5px;
+}
+
+.input {
+    width: 80%;
+    padding: 5% 5%;
+    border: 2px dashed rgb(21, 74, 21);
+}
+
+button {
+    margin-top: 10px;
+    background-color: rgb(23, 85, 47);
+    color:rgb(255, 255, 255);
+    padding: 4% 3%;
+    border: none;
+    border-radius: 70%;
+}
+
+button:hover {
+    background-color: rgb(172, 93, 57);
+}
+
+button:active {
+  background-color: rgb(23, 85, 47);
+  color:rgb(255, 255, 255);
+  transform: translateY(4px);
+}
