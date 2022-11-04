@@ -1,3 +1,17 @@
+var form = document.getElementById('submitform');
+form.addEventListener('submit',function(event){
+    event.preventDefault()
+
+    var commentInput = document.getElementById('comment-input').value
+    console.log(commentInput)
+
+    var emailInput = document.getElementById('email_input').value
+    console.log(emailInput)
+
+    var nameInput = document.getElementById('name_input').value
+    console.log(nameInput)
+})
+
 let limitChar = (element) => {
     const maxChar = 141;
     const CloseChar = 140;
@@ -16,6 +30,3 @@ let limitChar = (element) => {
     }
 }
 
-submitform.addEventListener('submit', (event)=> {
-    event.preventDefault();
-});
