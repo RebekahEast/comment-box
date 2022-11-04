@@ -1,7 +1,18 @@
-var commentinput = document.getElementById("comment-input");
-var wordcount = document.getElementById("word-count");
+let limitChar = (element) => {
+    const maxChar = 10;
+    const CloseChar = 6
+    
+    let ele = document.getElementById(element.id);
+    let charLen = ele.value.length;
+    let p = document.getElementById('charCounter');
+    p.innerHTML = maxChar - charLen + ' characters remaining';
+    
+    if (charLen > maxChar) {
+        ele.value = ele.value.substring(0, maxChar);
+        p.innerHTML = 0 + ' characters remaining'; 
+    }
 
-commentinput.addEventListener("keyup",function(){
-    var characters = commentinput.value.split('');
-    wordcount.innerText = characters.length;
-});
+    if (charLen > CloseChar ) {
+        
+    }
+}

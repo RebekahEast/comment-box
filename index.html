@@ -14,13 +14,13 @@
                 <h2><em>Write your comments here!</em></h2><br>
                 <div id = "create_comment">
                      <label for = "comment_input" class = "label">Leave a comment!</label>
-                     <textarea maxlength="150" placeholder="write your comment here..." id = "comment-input" class = "input" rows = "6"></textarea>
-                     <p><span id="word-count">0</span> characters</p>
+                     <textarea oninput="limitChar(this)" placeholder="write your comment here..." id = "comment-input" class = "input" rows = "6"></textarea>
+                     <p id="charCounter">140 character limit</p><br>
 
                     <label for = "email_input" class = "label">Your Email</label>
-                    <input id = "email_input" type = "email" class = "input" required placeholder = "email"></input>
+                    <input id = "email_input" type = "email" class = "input" placeholder = "email"></input>
 
-                    <label for = "name_input" class = "label">Your Name</label>
+                    <label for = "name_input" class = "label">Your Name*</label>
                     <input id = "name_input" type = "text" class = "input" required placeholder = "name"></label>
                 </div>
             <button id="submit_button">Submit</button>
