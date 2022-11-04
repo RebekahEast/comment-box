@@ -1,6 +1,6 @@
 let limitChar = (element) => {
-    const maxChar = 10;
-    const CloseChar = 6
+    const maxChar = 140;
+    const CloseChar = 120;
     
     let ele = document.getElementById(element.id);
     let charLen = ele.value.length;
@@ -13,6 +13,6 @@ let limitChar = (element) => {
     }
 
     if (charLen > CloseChar ) {
-        
+        ele.style.color='red';
     }
 }
