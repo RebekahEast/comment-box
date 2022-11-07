@@ -36,4 +36,12 @@ h4 {
 #send {
     margin-top: 20px;  
     margin-bottom: 20px; 
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 12, 12);
+    padding: 3px;
+    opacity: 0.2;
+}
+
+.send_enabled{
+    opacity: 1 !important;
 }
