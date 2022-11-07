@@ -24,5 +24,3 @@ function event_listeners () {
     form.email.addEventListener("keyup", submittable);
     form.name.addEventListener("keyup", submittable);
 }
-
-event_listeners()
