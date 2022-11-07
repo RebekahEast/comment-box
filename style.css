@@ -1,27 +1,39 @@
+* {
+    text-align: center;
+}
+
 h4 {
     font-size: 20px;
     text-align: center;
 }
 
-#comments {
-    border: 1px solid black;
-    padding: 4%;
-    margin: 2% 10% 10%;
-    box-sizing: border-box;
-    font-size: 15px;
-}
+
 
 #words {
-    width: 80%;
-}
-
-.label {
+    width: 35%;
     display: block;
-    margin-top: 4px;
-    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+
 }
 
 .input {
     position: relative;
-    margin: 2%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#person_info {
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; /* issue with the way name and email show up using at around 460px - it's because it's not part of the flexbox*/
+}
+
+#send {
+    margin-top: 20px;  
+    margin-bottom: 20px; 
 }

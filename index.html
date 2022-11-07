@@ -12,17 +12,19 @@
 
     <form id = "comments">
         <div>
-            <label for="commenting" class="label">Your Comments</label>
-            <input type="comment" id="words" class="input">
+            <label for="commenting" class="label">Your Comments</label><br><br>
+            <textarea id="words" class="input" rows="10"></textarea><br><br>
         </div>
 
         <div id="person_info">
             <label for="name" class="label">Your Name</label>
-            <input type="name" id="name" class="input">
+            <input type="name" id="name" class="input" placeholder="name">
 
             <label for="email" class="label">Your Email</label>
-            <input type="email" id="email" class="input">
+            <input type="email" id="email" class="input" placeholder="email">
         </div>
+
+        <input type="submit" id="send" value="Submit">
     </form>
 
     <script src="script.js"></script>
