@@ -1,6 +1,27 @@
+h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
 #comments {
     border: 1px solid black;
-    padding: 5%;
-    margin: 5% 5%;
+    padding: 4%;
+    margin: 2% 10% 10%;
     box-sizing: border-box;
+    font-size: 15px;
+}
+
+#words {
+    width: 80%;
+}
+
+.label {
+    display: block;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.input {
+    position: relative;
+    margin: 2%;
 }
