@@ -13,7 +13,10 @@ let limitChar = (element) => {
     }
     if (charLen > CloseChar ) {
         ele.style.color='orange';
-    } 
+    }
+    if (charLen < CloseChar) {
+        ele.style.color='black';
+    }
 }
 
 submitform.addEventListener('submit', (event)=> {
