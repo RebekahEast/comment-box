@@ -1,25 +1,21 @@
-const form = {
-    comment: document.getElementById("words"),
-    email: document.getElementById("email"),
-    name: document.getElementById("name")
-};
-
-function submittable () {
-    let comment = form.comment.value.trim();
-    let email = form.email.value.trim();
-    let name = form.name.value.trim();
-    if(comment.length > 4){
-        form.submit.classList.add("button_enabled");
-        form.submit.disabled = false;
-        console.log("this works")
-    } else {
-        form.submit.classList.remove("button_enabled");
-        form.submit.disabled = true;
+let limitChar = (element) => {
+    const maxChar = 141;
+    const CloseChar = 140;
+    
+    let ele = document.getElementById(element.id);
+    let charLen = ele.value.length;
+    let p = document.getElementById('charCounter');
+    p.innerHTML = maxChar - charLen + ' characters remaining';
+    
+    if (charLen > maxChar) {
+        ele.value = ele.value.substring(0, maxChar);
+        p.innerHTML = 0 + ' characters remaining'; 
     }
-} 
-
-function event_listeners () {
-    form.comment.addEventListener("keyup", submittable);
-    form.email.addEventListener("keyup", submittable);
-    form.name.addEventListener("keyup", submittable);
+    if (charLen > CloseChar ) {
+        ele.style.color='orange';
+    } 
 }
+
+submitform.addEventListener('submit', (event)=> {
+    event.preventDefault();
+});
