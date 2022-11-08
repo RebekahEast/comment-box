@@ -5,8 +5,9 @@ function countChars(obj){
 
     if (overlength < 0) {
         document.getElementById('charNum').innerHTML = '<span style = "color:red; font-weight:bold;"> You are over the word count of ' + maxlength + ' characters by ' + -overlength + '. </span>';
+        document.getElementById("words").style.backgroundColor = "red";
     } else {
-        document.getElementById('charNum').innerHTML = stdlength + ' out of ' + maxlength + ' characters remaining';
+        document.getElementById('charNum').innerHTML = stdlength + ' out of ' + maxlength + ' characters';
         }
 }
 
