@@ -35,8 +35,4 @@ function myfunction () {
     submitted_email.innerHTML = email.value;
     const d = new Date();
     document.getElementById("date").innerHTML = d;
-    
 } 
-
-
-
