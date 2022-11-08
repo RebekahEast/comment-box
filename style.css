@@ -7,8 +7,6 @@ h4 {
     text-align: center;
 }
 
-
-
 #words {
     width: 35%;
     display: block;
@@ -36,6 +34,13 @@ h4 {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap; /* issue with the way name and email show up using at around 460px - it's because it's not part of the flexbox*/
+}
+
+#submit {
+    outline: 2px solid rgb(134, 134, 134);
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 button {

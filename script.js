@@ -26,8 +26,15 @@ comments.addEventListener("submit", (event) => {
 
 function myfunction () {
     let comments = document.querySelector("#words");
+    let name = document.querySelector("#name");
+    let email = document.querySelector("#email");
     let submitted_comment = document.querySelector("#submitted_comment");
-
+    let submitted_name = document.querySelector("#submitted_name");
+    let submitted_email = document.querySelector("#submitted_email");
     submitted_comment.innerHTML = comments.value;
-    
-}
+    submitted_name.innerHTML = name.value;
+    submitted_email.innerHTML = email.value;    
+} 
+
+
+
