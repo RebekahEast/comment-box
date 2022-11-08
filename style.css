@@ -33,15 +33,10 @@ h4 {
     flex-wrap: wrap; /* issue with the way name and email show up using at around 460px - it's because it's not part of the flexbox*/
 }
 
-#send {
+button {
     margin-top: 20px;  
     margin-bottom: 20px; 
-    color: rgb(255, 255, 255);
-    background-color: rgb(13, 12, 12);
+    color: rgb(0, 0, 0);
+    background-color: rgb(191, 191, 191);
     padding: 3px;
-    opacity: 0.2;
-}
-
-.send_enabled{
-    opacity: 1 !important;
 }
