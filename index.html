@@ -15,12 +15,12 @@
             <label for="commenting" class="label">Your Comments</label>
             <img src = "pics/comments.png" width = 25 alt="three dots in a speech bubble"><br><br>
             <textarea oninput="countChars (this)" id="words" class="input" rows="10" minlength="2"></textarea>
-            <p id="charNum">140 character limit</p><br>
+            <p id="charNum">140 character limit</p>
         </div>
 
         <div id="person_info">
             <label for="name" class="label">Your Name*</label>
-            <input type="name" id="name" class="input" placeholder="name" required>
+            <input type="name" id="name" class="input" placeholder="name" required><br>
 
             <label for="email" class="label">Your Email</label>
             <input type="email" id="email" class="input" placeholder="email" required>
@@ -29,7 +29,6 @@
     </form>
 
     <h4>SUBMITTED COMMENTS SECTION</h4>
-    <p>No one has commented yet - be the first!</p>  
     <!-- remove when the button is clicked? -->
     <div id = "submit"> 
         <h4>Comment:</h4>
@@ -37,7 +36,6 @@
         <p id = "submitted_email"></p><br>
         <p id = "submitted_comment"></p><br>
         <p id = "date"></p>
-    </div>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css"></link>
 </body>

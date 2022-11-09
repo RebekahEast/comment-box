@@ -20,7 +20,7 @@ comments.addEventListener("submit", (event) => {
     name_input.value = ''; // resets the form back to empty
     comment_input.value = '';
     email_input.value = '';
-    stdlength.value = 0; // FIX? how to reset the word counter
+    stdlength.value = 0; // FIX? how to reset the word counter // THIS ISN'T DEFINED IN THE SAME FUNCTION SO WONT
 });
 
 function myfunction () {
@@ -33,8 +33,15 @@ function myfunction () {
     submitted_comment.innerHTML = comments.value;
     submitted_name.innerHTML = name.value;
     submitted_email.innerHTML = email.value;
+    var element = document.createElement('div'); //created an object called element
+    element.style.cssText = "width: 200px; height:200px; background:grey; margin:auto;"; //styling the new object called element
+    var target = document.getElementById('submit'); //targetting the element of around where we would like to place element
+
+    document.body.insertBefore (element, target);  //targeting parent node, then adding the element, and where we would like to insert - this is before
 } 
 
 //html form element
 //append child
 //adding a child to show the div submit
+
+
