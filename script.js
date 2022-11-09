@@ -35,8 +35,7 @@ function myfunction () {
     submitted_email.innerHTML = email.value;
     var element = document.createElement('div'); //created an object called element
     element.style.cssText = "width: 200px; height:200px; background:grey; margin:auto;"; //styling the new object called element
-    var target = document.getElementById('submit'); //targetting the element of around where we would like to place element
-
+    var target = document.getElementById('submit'); //targeting the element of around where we would like to place element
     document.body.insertBefore (element, target);  //targeting parent node, then adding the element, and where we would like to insert - this is before
 } 
 
