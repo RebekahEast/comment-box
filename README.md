@@ -2,7 +2,7 @@
 comment form for a website
 
 <h2> 9.11.22 </h2>
-* Yesterday I went to the founders and coders meet up to discuss the projects and get to know other people
+* Yesterday I went to the founders and coders meet up to discuss this project and get to know other people
 * It was REALLY good fun! 
 * With the help of the mentors, I realised that in this code I call the 'submit' twice and they both do two different things --> once from the form and once with the button 
 * As JS is newer to me than HTML and CSS, i have used a plethora of resources to try and work the code for this, however in doing so it's led to me getting confused on what action is doing what
