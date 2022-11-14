@@ -9,12 +9,14 @@ function submit_form(event) {
     console.log(submitted_email);
     console.log(submitted_name);
 
-    let display_comment = document.createElement("div");
-    display_comment.innerText = 'name: ${submitted_name} email: ${submitted_email}: ' //this doesn't work??
+    let display_comment = document.createElement("p");
+    display_comment.innerText = 'name: email:' //this doesn't work??
+    responses.appendChild(display_comment);
     console.log(display_comment);
 } 
 
 form.addEventListener('submit', submit_form);
+
 
 function countChars(obj){
     var maxlength = 140;
