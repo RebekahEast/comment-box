@@ -10,9 +10,10 @@ function submit_form(event) {
     console.log(submitted_name);
 
     let display_comment = document.createElement("p");
-    display_comment.innerText = 'name: email:' //this doesn't work??
+    display_comment.innerText = 'name: ${submitted_name} email:' //this doesn't work?? //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
     responses.appendChild(display_comment);
     console.log(display_comment);
+    event.target.reset() //resets the form after submitting
 } 
 
 form.addEventListener('submit', submit_form);
