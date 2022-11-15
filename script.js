@@ -10,7 +10,7 @@ form.addEventListener('submit', function(event){
     console.log(submitted_email);
     console.log(submitted_name);
 
-    responses.innerHTML = "<b>Name: </b>" + submitted_comment + "<br />" + "<b> Email: </b>" + submitted_name + "<br />" + "<br />" + "<b>Comment: </b>" + submitted_comment//concatenating
+    responses.innerHTML = "<b>Name: </b>" + submitted_name + "<br />" + "<b> Email: </b>" + submitted_email + "<br />" + "<br />" + "<b>Comment: </b>" + submitted_comment//concatenating
 
 
     event.target.reset() //resets the form after submitting
