@@ -5,12 +5,15 @@ form.addEventListener('submit', function(event){
     var submitted_comment = document.getElementById("words").value;
     var submitted_name = document.getElementById("name").value;
     var submitted_email = document.getElementById("email").value;
-    let responses = document.getElementById("responses");
+    let NameEmail = document.getElementById("NameEmail");
+    let Comment = document.getElementById("comments");
     console.log(submitted_comment);
     console.log(submitted_email);
     console.log(submitted_name);
 
-    responses.innerHTML = submitted_name + submitted_email;
+    NameEmail.innerHTML = "name: " + submitted_name + " Email: " + submitted_email; //concatenating
+    Comment.innerHTML = "comment: " + submitted_comment; //concatenating
+
 
 
     event.target.reset() //resets the form after submitting
