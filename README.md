@@ -1,6 +1,12 @@
 # comment-box
 comment form for a website
 
+<h2> 15.11.22 </h2>
+things left to do
+* the word count will prevent the form from sending but wont remove after the word count is reduced back below the maximum
+* form validation 
+
+
 <h2> 9.11.22 </h2>
 * Yesterday I went to the founders and coders meet up to discuss this project and get to know other people
 * It was REALLY good fun! 
