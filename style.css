@@ -26,14 +26,6 @@ h4 {
     flex-wrap: wrap; /* issue with the way name and email show up using at around 460px - it's because it's not part of the flexbox*/
 }
 
-/* #submit {
-    outline: 1px solid rgb(134, 134, 134);
-    padding: 1px;
-    margin: 0 auto;
-    margin-bottom: 100px;
-    max-width: 8px;
-    width: 35%;
-} */
 
 #send {
     margin-top: 20px;  

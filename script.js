@@ -5,15 +5,12 @@ form.addEventListener('submit', function(event){
     var submitted_comment = document.getElementById("words").value;
     var submitted_name = document.getElementById("name").value;
     var submitted_email = document.getElementById("email").value;
-    let NameEmail = document.getElementById("NameEmail");
-    let Comment = document.getElementById("comments");
+    let responses = document.getElementById("responses");
     console.log(submitted_comment);
     console.log(submitted_email);
     console.log(submitted_name);
 
-    NameEmail.innerHTML = "name: " + submitted_name + " Email: " + submitted_email; //concatenating
-    Comment.innerHTML = "comment: " + submitted_comment; //concatenating
-
+    responses.innerHTML = "<b>Name: </b>" + submitted_comment + "<br />" + "<b> Email: </b>" + submitted_name + "<br />" + "<br />" + "<b>Comment: </b>" + submitted_comment//concatenating
 
 
     event.target.reset() //resets the form after submitting
@@ -35,9 +32,9 @@ function countChars(obj){
         document.getElementById("send").disabled = true;
         document.getElementById("words").style.borderColor = "red";
     }
-    if (maxlength > stdlength)  {
+    if (overlength > 0)  {
         document.getElementById('charNum').innerHTML = stdlength + ' out of ' + maxlength + ' characters';
-        document.getElementById("words").disabled = false; //this doesn't work???
+        document.getElementById("words").enabled = true; //this doesn't work??? currently it won't let you submit if you type over the word count and then go back
         document.getElementById("words").style.borderColor = "grey";
     }
 }
