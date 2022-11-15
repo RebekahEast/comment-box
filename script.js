@@ -1,5 +1,6 @@
 var form = document.getElementById("comments");
-function submit_form(event) { 
+
+form.addEventListener('submit', function(event){ 
     event.preventDefault(); 
     var submitted_comment = document.getElementById("words").value;
     var submitted_name = document.getElementById("name").value;
@@ -9,20 +10,23 @@ function submit_form(event) {
     console.log(submitted_email);
     console.log(submitted_name);
 
-    let display_comment = document.createElement("p");
-    display_comment.innerText = 'name: ${submitted_name} email:' //this doesn't work?? //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
-    responses.appendChild(display_comment);
-    console.log(display_comment);
+    responses.innerHTML = submitted_name + submitted_email;
+
+
     event.target.reset() //resets the form after submitting
-} 
-
-form.addEventListener('submit', submit_form);
-
+    // let display_comment = document.createElement("p");
+    
+    
+    // display_comment.innerText = 'name: ${submitted_name} email:' //this doesn't work?? //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
+    // responses.appendChild(display_comment);
+    // console.log(display_comment);
+    // event.target.reset() //resets the form after submitting
+})
 
 function countChars(obj){
     var maxlength = 140;
     var stdlength = obj.value.length;
-    var overlength = (maxlength - stdlength);
+    var overlength = (maxlength - stdlength);    
     if (overlength < 0) {
         document.getElementById('charNum').innerHTML = '<span style = "color:red; font-weight:bold;"> You are over the word count of ' + maxlength + ' characters by ' + -overlength + '. </span>';
         document.getElementById("send").disabled = true;
@@ -34,3 +38,4 @@ function countChars(obj){
         document.getElementById("words").style.borderColor = "grey";
     }
 }
+
