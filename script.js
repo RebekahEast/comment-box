@@ -6,21 +6,17 @@ form.addEventListener('submit', function(event){
     var submitted_name = document.getElementById("name").value;
     var submitted_email = document.getElementById("email").value;
     let responses = document.getElementById("responses");
-    console.log(submitted_comment);
-    console.log(submitted_email);
-    console.log(submitted_name);
+    let display_comment = document.createElement("p");
+    
+    console.log(display_comment);
+    // console.log(submitted_comment);
+    // console.log(submitted_email);
+    // console.log(submitted_name);
 
-    responses.innerHTML = "<b>Name: </b>" + submitted_name + "<br />" + "<b> Email: </b>" + submitted_email + "<br />" + "<br />" + "<b>Comment: </b>" + submitted_comment//concatenating
-
+    display_comment.innerHTML = "<b>Name: </b>" + submitted_name + "<br />" + "<b> Email: </b>" + submitted_email + "<br />" + "<br />" + "<b>Comment: </b>" + submitted_comment + "<hr>" //concatenating
+    responses.appendChild(display_comment);
 
     event.target.reset() //resets the form after submitting
-    // let display_comment = document.createElement("p");
-    
-    
-    // display_comment.innerText = 'name: ${submitted_name} email:' //this doesn't work?? //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
-    // responses.appendChild(display_comment);
-    // console.log(display_comment);
-    // event.target.reset() //resets the form after submitting
 })
 
 function countChars(obj){
