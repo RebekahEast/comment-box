@@ -13,20 +13,21 @@
 
 <h3 align = "center"><b>Thing's I'd love to improve on</h3></b>
 <p align = "center">1. Having the date and time of the comment appear when the comment is submitted<br><br>
-2. <br><br>
-3. <br><br>
+2. My project unfortunately has an issue with the number of characters. If you go over the limit of word count, you can't submit (GREAT!) but then if you remove some and go under, I can't get the comment to be able to be submitted again.. The page has to be refreshed<br><br>
+3. I would have liked to have more validation like name can't have a number or special char<br><br>
 
 <h3 align = "center"><b>Days of Note</h3></b>
-<h2 align = "center"> 15.11.22 </h2>
-<p align = "center">things left to do
-* the word count will prevent the form from sending but wont remove after the word count is reduced back below the maximum
-* form validation </p>
+<p align = "center"> <b>15.11.22 </b></p>
+<p align = "center">things left to do<br>
+1. the word count will prevent the form from sending but wont remove after the word count is reduced back below the maximum <br>
+2. form validation <br><br></p>
 
 
-<h2 align = "center"> 9.11.22 </h2>
-<p align = "center">* Yesterday I went to the founders and coders meet up to discuss this project and get to know other people
-* It was REALLY good fun! 
-* With the help of the mentors, I realised that in this code I call the 'submit' twice and they both do two different things --> once from the form and once with the button 
-* As JS is newer to me than HTML and CSS, i have used a plethora of resources to try and work the code for this, however in doing so it's led to me getting confused on what action is doing what
-* As of right now, I'm going to leave the code as is and have a think before coming back to it
-* I am also going to google child appendages (to see if I can just get several comments on the page at one time)</p>
+<p align = "center"> <b>9.11.22 </b></p>
+<p align = "center">
+1. Yesterday I went to the founders and coders meet up to discuss this project and get to know other people<br>
+2. It was REALLY good fun!<br>
+3. With the help of the mentors, I realised that in this code I call the 'submit' twice and they both do two different things --> once from the form and once with the button <br>
+4. As JS is newer to me than HTML and CSS, i have used a plethora of resources to try and work the code for this, however in doing so it's led to me getting confused on what action is doing what <br>
+5. As of right now, I'm going to leave the code as is and have a think before coming back to it <br>
+6. I am also going to google child appendages (to see if I can just get several comments on the page at one time)</p>
